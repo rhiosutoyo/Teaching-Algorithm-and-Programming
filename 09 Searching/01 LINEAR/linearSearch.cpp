@@ -45,12 +45,12 @@ int main(){
 	// LINEAR SEARCH BY NAME
 	char key[100] = "Water Pump";
 	int res = linearSearchByName(items, count, key);
-	if(res > 0) printf("%s is located in the index %d\n", key, res);
+	if(res > 0) printf("%s is located in the array index %d\n", key, res);
 	else printf("%s is not located in the dataset\n", key);
 
 	strcpy(key, "Water Gas");
 	res = linearSearchByName(items, count, key);
-	if(res > 0) printf("%s is located in the index %d\n", key, res);
+	if(res > 0) printf("%s is located in the array index %d\n", key, res);
 	else printf("%s is not located in the dataset\n", key);
 
 	// LINEAR SEARCH BY QTY (MULTIPLE RESULTS)
@@ -62,7 +62,7 @@ int main(){
 
 	linearSearchByQty(items, count, qtyKey, qtyItemRes, &qtyCountRes);
 	if(qtyCountRes > 0){
-		printf("items that has %d number of qty are located in the index: ", qtyKey);
+		printf("items that has %d number of qty are located in the array index: ", qtyKey);
 		for(int z=0 ; z<qtyCountRes ; z++) printf("%d ", qtyItemRes[z]);
 	}
 	else printf("there is no item that has %d number of qty", qtyKey);
