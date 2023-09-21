@@ -1,8 +1,8 @@
-##############################################
-## 	 COMP6047001 - Algorithm and Programming			
-## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
-## 	 Bina Nusantara University			
-##############################################
+//##############################################
+//## 	 COMP6047001 - Algorithm and Programming			
+//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
+//## 	 Bina Nusantara University			
+//##############################################
 
 #include<stdio.h>
 #include<math.h>

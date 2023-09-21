@@ -1,4 +1,11 @@
+//##############################################
+//## 	 COMP6047001 - Algorithm and Programming			
+//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
+//## 	 Bina Nusantara University			
+//##############################################
+
 #include <stdio.h>
+
 int main () {
     int x = 44;  int y = 44;
 	printf("x = %d, y = %d\n", x, y);	

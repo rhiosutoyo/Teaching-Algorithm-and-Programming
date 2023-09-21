@@ -1,3 +1,9 @@
+//##############################################
+//## 	 COMP6047001 - Algorithm and Programming			
+//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
+//## 	 Bina Nusantara University			
+//##############################################
+
 #include <stdio.h>
 
 const float Pi = 3.14;	  						/*Constant declaration*/

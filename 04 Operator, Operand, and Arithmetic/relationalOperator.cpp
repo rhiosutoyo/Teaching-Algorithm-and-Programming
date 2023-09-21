@@ -1,4 +1,11 @@
+//##############################################
+//## 	 COMP6047001 - Algorithm and Programming			
+//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
+//## 	 Bina Nusantara University			
+//##############################################
+
 #include<stdio.h>
+
 int main(){
 	bool flag = false;
     int x=5, y=5;
