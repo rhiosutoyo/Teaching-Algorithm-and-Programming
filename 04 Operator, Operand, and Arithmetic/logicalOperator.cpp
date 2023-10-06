@@ -10,20 +10,21 @@ int main(){
 	int x = 5, y = 10;
 	
 	// TRUE EXPRESSION
-	(x < y);		// TRUE
-	(x != y);		// TRUE
+	printf("%d\n",(x < y));			// TRUE
+	printf("%d\n",(x != y));			// TRUE
 	
 	// FALSE EXPRESSION	
-	(x > y);		// FALSE
-	(x == y);		// FALSE
+//	(x > y);		// FALSE
+//	(x == y);		// FALSE
 
 	// just use A or B	(SINGLE EXPRESSION)
-	if(x < y) printf("print something_1\n");
-	if(x > y) printf("print something_2\n");
-	if(x != y) printf("print something_3\n");
-	if(x == y) printf("print something_4\n");
+//	if(x < y) printf("print something_1\n");
+//	if(x > y) printf("print something_2\n");
+//	if(x != y) printf("print something_3\n");
+//	if(x == y) printf("print something_4\n");
 	
 	// TRY TO USE LOGICAL OPERATOR (MULTIPLE EXPRESSION)
+	x = 5, y = 10;
 	if( (x<y) && (x!=y) ) printf("print something_5\n");
 
 	// will the print something 6 printed? why?
@@ -37,7 +38,5 @@ int main(){
 	// because OR condition only need one expression to be TRUE
 	// x < y 	==> TRUE
 	// x == y	==> FALSE
-	
-	
 	
 }
