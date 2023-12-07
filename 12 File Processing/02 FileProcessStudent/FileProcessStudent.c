@@ -41,18 +41,31 @@ int main() {
 		   2440057501#NICOLE#160.81#F#6
 		   2440086501#RAFAEL RICHARD RUSSELL#156.69#M#6
         */
-		fscanf(in, "%[^#]#%[^#]#%lf#%c#%d\n", &students[n].NIM, &students[n].name, &students[n].height, &students[n].gender, &students[n].group);
+		fscanf(in, "%[^#]#%[^#]#%lf#%c#%d\n", 
+		&students[n].NIM, 
+		&students[n].name, 
+		&students[n].height, 
+		&students[n].gender, 
+		&students[n].group);
 		n++;
 	}
 	
 	// PART 2 - PRINT THE DATA AND ADD ADDTIONAL FORMAT
 	printAllData(students, n);
-
+	
 	// PART 3.1 - WRITE THE DATA INTO OUTPUT FILE
 	FILE *out = fopen("studentFemale.out","w");							// write file (stdout)
 	for(i=0 ; i<n ; i++) {
 		if(students[i].gender == 'F'){
-			fprintf(out,"%s#%s#%.2lf#%c#%d\n", students[i].NIM, students[i].name, students[i].height, students[i].gender, students[i].group);
+			// manipulate data of group
+			students[i].group = 99;
+			
+			fprintf(out,"%s#%s#%.2lf#%c#%d\n", 
+			students[i].NIM, 
+			students[i].name, 
+			students[i].height, 
+			students[i].gender, 
+			students[i].group);
 		}
 	}
 	fclose(out);			// close file
@@ -61,7 +74,21 @@ int main() {
 	out = fopen("tallMale.out","w");							// write file (stdout)
 	for(i=0 ; i<n ; i++) {
 		if(students[i].gender == 'M' && students[i].height >= 165){
-			fprintf(out,"%s#%s#%.2lf#%c#%d\n", students[i].NIM, students[i].name, students[i].height, students[i].gender, students[i].group);
+//			fprintf(out,"%s#%s#%.2lf#%c#%d\n", 
+//			students[i].NIM, 
+//			students[i].name, 
+//			students[i].height, 
+//			students[i].gender, 
+//			students[i].group);
+
+//			2440059154#JOSHUA ALEXANDER CORNELIS SIMANJUNTAK#166.31#M#4
+
+//			JOSHUA ALEXANDER CORNELIS SIMANJUNTAK
+//			height = 166.31 
+
+			fprintf(out, "%s\nheight = %.2lf\n\n",
+			students[i].name,
+			students[i].height);
 		}
 	}
 	fclose(out);			// close file
