@@ -6,6 +6,7 @@ struct data{
 	int qty;
 };
 
+// PRINT ITEMS
 void printData(struct data items[], int count){
 	printf("%2s %-30s %5s\n", "NO", "ITEM", "QTY");
 	for(int i=0 ; i<count ; i++){
@@ -20,7 +21,8 @@ int linearSearchByName(struct data items[], int count, char key[]){
 	return -1;
 }
 
-void linearSearchByQty(struct data items[], int count, int qtyKey, int qtyItemRes[], int *qtyCountRes){
+void linearSearchByQty(struct data items[], int count, int qtyKey, int qtyItemRes[], 
+int *qtyCountRes){
 	for(int i=0 ; i<count ; i++){
 		if( items[i].qty == qtyKey ) {
 			qtyItemRes[*qtyCountRes] = i;
@@ -31,24 +33,29 @@ void linearSearchByQty(struct data items[], int count, int qtyKey, int qtyItemRe
 
 int main(){
 	struct data items[15];
+	
+	// OPEN FILE
 	FILE *in = fopen("data.txt", "r");
 	if(in == NULL) printf("OPEN FAILED!");
 	
+	// READ FILE
 	int count = 0;
 	while(!feof(in)){
 		fscanf(in, "%[^#]#%d\n", &items[count].name, &items[count].qty);
 		count++;	
 	}
+	
+	// PRINT ITEMS
 	printData(items, count);
 	puts("");
 	
 	// LINEAR SEARCH BY NAME
-	char key[100] = "Water Pump";
-	int res = linearSearchByName(items, count, key);
+	char key[100] = "Water Pump";						// search key
+	int res = linearSearchByName(items, count, key);	// find the item	
 	if(res > 0) printf("%s is located in the index %d\n", key, res);
 	else printf("%s is not located in the dataset\n", key);
 
-	strcpy(key, "Water Gas");
+	strcpy(key, "payung terbalik");
 	res = linearSearchByName(items, count, key);
 	if(res > 0) printf("%s is located in the index %d\n", key, res);
 	else printf("%s is not located in the dataset\n", key);
