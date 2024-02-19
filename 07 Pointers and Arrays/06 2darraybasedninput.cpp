@@ -1,9 +1,3 @@
-//##############################################
-//## 	 COMP6047001 - Algorithm and Programming			
-//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
-//## 	 Bina Nusantara University			
-//##############################################
-
 // what about input the the size of the 2darray?
 #include<stdio.h>
 

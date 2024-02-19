@@ -1,13 +1,8 @@
-//##############################################
-//## 	 COMP6047001 - Algorithm and Programming			
-//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
-//## 	 Bina Nusantara University			
-//##############################################
-
 #include<stdio.h>
 #include<string.h>
 
 int main(){
+	printf("Two-dimensional arrays for numbers:\n");
 	// array for matrix
 	int matrix[3][3] = {0};			// to initialize all var to 0
 	matrix[2][0] = 2;
@@ -20,6 +15,11 @@ int main(){
 		printf("\n");
 	}	
 	printf("\n");
+	
+	
+	
+
+	printf("Two-dimensional arrays for string:\n");
 
 	// array for string name
 	char name[100] = "Rhio";

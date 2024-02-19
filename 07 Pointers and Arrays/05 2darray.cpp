@@ -14,6 +14,7 @@ int main(){
 	
 	// input
 	int input = 0;
+	printf("Please input a number: ");
 	scanf("%d", &input);
 	for(i=0 ; i<3 ; i++){
 		for(j=0 ; j<5 ; j++){
