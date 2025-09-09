@@ -1,15 +1,9 @@
-//##############################################
-//## 	 COMP6047001 - Algorithm and Programming			
-//## 	 Dr. Rhio Sutoyo, S.Kom., M.Sc.		
-//## 	 Bina Nusantara University			
-//##############################################
-
 #include<stdio.h>
 
 int main(){
 	// new line, line feed
 	printf("Hello!\n");
-	printf("Hi everyone. My name is Rhio Sutoyo.. %c\n\n", 1, 1);
+	printf("Hi everyone. My name is Rhio Sutoyo.. %c\n\n", 1);
 	
 	// horizontal tab
 	printf("\tI will be your teacher in \"Algorithms and Programming\" subject at BINUS University.\n");
