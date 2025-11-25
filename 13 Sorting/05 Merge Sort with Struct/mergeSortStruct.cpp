@@ -106,7 +106,7 @@ int main(){
 		   2440057501#NICOLE#160.81#F#6
 		   2440086501#RAFAEL RICHARD RUSSELL#156.69#M#6
         */
-		fscanf(in, "%[^#]#%[^#]#%lf#%c#%d\n", &students[n].NIM, &students[n].name, &students[n].height, &students[n].gender, &students[n].group);
+		fscanf(in, "%[^#]#%[^#]#%lf#%c#%d\n", students[n].NIM, students[n].name, &students[n].height, &students[n].gender, &students[n].group);
 		n++;
 	}	
 	printAllDataInRows(students, n);

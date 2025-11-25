@@ -47,7 +47,7 @@ int main(){
 	
 	int count = 0;
 	while(!feof(in)){
-		fscanf(in, "%[^#]#%d\n", &items[count].name, &items[count].qty);
+		fscanf(in, "%[^#]#%d\n", items[count].name, &items[count].qty);
 		count++;	
 	}
 	printData(items, count);
