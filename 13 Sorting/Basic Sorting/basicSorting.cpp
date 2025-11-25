@@ -3,16 +3,14 @@
 void bubbleSort(int data[], int n){
 	int i, j;
 	int temp;
-	// OUTER LOOP
-	for(i=1;i<n;i++){
-		// INNER LOOP
-		for(j=n-1;j>=i;j--){
-			// ASCENDING
-			if(data[j-1] > data[j]){
-				// PASSING BY REFERENCE
-				temp = data[j-1];
-				data[j-1] = data[j];
-				data[j] = temp;
+    // OUTER LOOP
+	for(i=0; i<n-1; i++){
+	    // INNER LOOP 
+		for(j=0; j<n-1-i; j++){
+			if(data[j] > data[j+1]){
+                temp = data[j];
+                data[j] = data[j+1];
+                data[j+1] = temp;
 			}
 		}
 	}
@@ -46,12 +44,11 @@ void printData(int data[], int n){
 
 int main(){
 	int data[100] = {60,50,40,30,10,20};
-
 	printData(data, 6);
 
 	puts("\n\nBubble Sort (ASCENDING)");
 	bubbleSort(data, 6);
-	printData(data, 6);	
+	printData(data, 6);
 	
 	puts("\n\nSelection Sort (DESCENDING)");
 	SelectionSort(data, 6);
