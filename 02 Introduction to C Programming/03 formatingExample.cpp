@@ -16,6 +16,7 @@ int main(){
 	// Comma Value
 	printf ("%8.2f\n", 3.14159);
 	printf ("%-8.3f\n", 3.14159);
+	printf ("%8.5f\n", 3.14159);
 		
 	return (0);
 }
