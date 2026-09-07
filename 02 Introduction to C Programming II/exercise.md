@@ -124,5 +124,4 @@ Variable 'studentId'     (unsigned int) : 4 byte(s)
 
 ## Submission & Grading Guidelines
 * Submit source code files named `exercise1.c`, `exercise2.c`, and `exercise3.c`.
-* Ensure each file compiles without warnings under the `-Wall -Wextra -pedantic -std=c11` flags.
 * Document answers to each challenge question inside multi-line comments at the bottom of each respective source file.
