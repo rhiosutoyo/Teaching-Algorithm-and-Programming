@@ -6,10 +6,18 @@
 #define APP_VERSION "2.0"
 
 int main(void) {
+    printf("%c\n", 65+3);
+    printf("%d\n", 65+3);
+
+
     /* ==========================================================
      * 1. CONSTANTS & VARIABLES
      * ========================================================== */
     printf("--- 1. CONSTANTS & VARIABLES ---\n");
+    puts("this is puts");
+    printf("this is puts\n");
+    putchar('a');
+    printf("a");
     
     /* 'const' ensures the value cannot be reassigned later in the program */
     const double PI = 3.1415926535;
@@ -106,24 +114,38 @@ int main(void) {
     int userAge;
     char userSection;
 
-    printf("Enter your age (integer): ");
+    // printf("Enter your age (integer): ");
     /*
      * scanf requires memory addresses (using '&' for primitive types)
      * to store the scanned values directly.
      */
-    scanf("%d", &userAge);
+    // scanf("%d", &userAge);
 
     /*
      * Pitfall with '%c':
      * Pressing ENTER leaves a newline character ('\n') in the input buffer.
      * A leading space before " %c" tells scanf to discard any leading whitespace/newlines.
      */
-    printf("Enter your classroom section (single character, e.g., A, B, C): ");
-    scanf(" %c", &userSection);
+    // printf("Enter your classroom section (single character, e.g., A, B, C): ");
+    // scanf(" %c", &userSection);
 
+    float userGPA;
+    // printf("Enter your GPA:");
+    // scanf("%f", &userGPA);
+
+
+    // printf("Enter your Age, Section, and GPA:");
+    // scanf("%d %c %f", &userAge, &userSection, &userGPA);
+
+    char userName[200];
+    printf("What is your name:");
+    scanf("%[^$]", userName);
+    
     printf("\nCaptured Details:\n");
-    printf("- Age     : %d\n", userAge);
-    printf("- Section : %c\n", userSection);
+    // printf("- Age     : %20d\n", userAge);
+    // printf("- Section : %20c\n", userSection);
+    // printf("- GPA     : %20.2f\n", userGPA);
+    printf("- Name    : %20s\n", userName);
 
     return 0;
 }
