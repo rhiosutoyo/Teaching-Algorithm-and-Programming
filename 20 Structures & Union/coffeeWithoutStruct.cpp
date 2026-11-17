@@ -47,6 +47,7 @@ int main() {
 
 	// PRINT INITIAL COFFEE MENU
 	printf("=== Coffee Menu ===\n");
+    printf("---------------------------------------------------------------\n");
 	printCoffeeMenu(name, caffeine, price, temperature, count);
 
 	// SWAP DATA IN THE ARRAY (e.g., swap Latte and Mocha)
@@ -55,6 +56,7 @@ int main() {
 	swapCoffeePosition(name, caffeine, price, temperature, x, y);
 
 	puts("\n=== Coffee Menu After Swapping ===");
+    printf("---------------------------------------------------------------\n");
 	printCoffeeMenu(name, caffeine, price, temperature, count);
 
 	return 0;
