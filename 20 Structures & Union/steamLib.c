@@ -73,9 +73,9 @@ int main(void) {
     printf("Cheapest: %s\nMost expensive: %s\n",
            library[min].title, library[max].title);
 
-// Read a game's title with fgets
-fgets(g1.title, sizeof g1.title, stdin);
-g1.title[strcspn(g1.title, "\n")] = '\0';   // remove the newline
+    // Read a game's title with fgets
+    fgets(g1.title, sizeof g1.title, stdin);
+    g1.title[strcspn(g1.title, "\n")] = '\0';   // remove the newline
 
     return 0;
 }
